@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<title>
+    HyperJob Agency
+</title>
+<body>
+<h2>Welcome to HyperJob Agency!</h2>
+<h3>Vacancies!</h3>
+{% for vacancy in vacancies %}
+<div>{{ vacancy.author }}: {{ vacancy.description }}</div>
+{% endfor %}
+</body>
+</html>

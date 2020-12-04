@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<title>
+    HyperJob Agency
+</title>
+<body>
+<h2>Welcome to HyperJob!</h2>
+<div><a href="/login">login</a></div>
+<div><a href="/signup">signup</a></div>
+<div><a href="/resumes">resumes</a></div>
+<div><a href="/vacancies">vacancies</a></div>
+<div><a href="/home">home</a></div>
+{% if user.is_authenticated %}
+<div><a href="/logout">logout</a></div>
+{% endif %}
+</body>
+</html>

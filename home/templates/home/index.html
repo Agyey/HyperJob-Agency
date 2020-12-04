@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<title>
+    HyperJob Agency
+</title>
+<body>
+<form action="/vacancy/new" method="get"> {% csrf_token %}
+    <input type="submit" value="Create Vacancy">
+</form>
+<form action="/resume/new" method="get"> {% csrf_token %}
+    <input type="submit" value="Create Resume">
+</form>
+</body>
+</html>
